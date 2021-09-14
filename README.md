@@ -16,7 +16,7 @@
   </a>
 
   <h3 align="center">Odoo-14 Cookbook</h3>
-
+  <h4 align="center">Author: Kamrul Islam Shahin 🇧🇩</h4>
   <p align="center">
     Learning odoo 14 from absolute beginning.
     <br />
@@ -31,20 +31,11 @@
 
 <!-- TABLE OF CONTENTS -->
 
-<details open="open">
-  <summary><h2>Table of Contents</h2></summary>
-  <ol>
-    <li><a href="#installation">Installation</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-  </ol>
-</details>
+## Table of Contents
 
-<!-- INSTALLATION -->
-
-## Installation
-
-- Updating soon
+| Index |                            Contents                             |
+| :---: | :-------------------------------------------------------------: |
+|   1   | [Installation and environment setup](./pages/1_installation.md) |
 
 <!-- CONTRIBUTING -->
 
