@@ -66,15 +66,15 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/kamrulSh/repo.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/kamrulSh/odoo14-cookbook.svg?style=for-the-badge
 [contributors-url]: https://github.com/KamrulSh/odoo14-cookbook/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/KamrulSh/odoo14-cookbook.svg?style=for-the-badge
 [forks-url]: https://github.com/KamrulSh/odoo14-cookbook/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/KamrulSh/odoo14-cookbook.svg?style=for-the-badge
 [stars-url]: https://github.com/KamrulSh/odoo14-cookbook/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/KamrulSh/odoo14-cookbook.svg?style=for-the-badge
 [issues-url]: https://github.com/KamrulSh/odoo14-cookbook/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/KamrulSh/odoo14-cookbook.svg?style=for-the-badge
 [license-url]: https://github.com/KamrulSh/odoo14-cookbook/blob/main/LICENSE
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-shield]: https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
 [linkedin-url]: https://linkedin.com/in/mdkamrulshahin
