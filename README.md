@@ -36,6 +36,7 @@
 | Index |                            Contents                             |
 | :---: | :-------------------------------------------------------------: |
 |   1   | [Installation and environment setup](./pages/1_installation.md) |
+|   2   |  [Creating Models And Basic Fields](./pages/2_modelsFields.md)  |
 
 <!-- CONTRIBUTING -->
 
