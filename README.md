@@ -37,6 +37,7 @@
 | :---: | :-------------------------------------------------------------: |
 |   1   | [Installation and environment setup](./pages/1_installation.md) |
 |   2   |  [Creating Models And Basic Fields](./pages/2_modelsFields.md)  |
+|   3   |   [Access Rights for created Models ](./pages/3_security.md)    |
 
 <!-- CONTRIBUTING -->
 
