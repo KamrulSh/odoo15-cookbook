@@ -226,6 +226,8 @@
 
   ![odoodb5](../images/odoodb5.png)
 
+### Odoo developer mode
+
 - You have to activate developer mode to get full access the odoo apps. Just click the `icon` close to discuss > Settings > Activate Developer Mode.
 
   ![odoodb6](../images/odoodb6.png)
@@ -233,6 +235,9 @@
 - You can see all the odoo apps list in the `Apps` menu.
 
   ![odoodb7](../images/odoodb7.png)
+
+- Download odoo debug extension from the below link to activate debug mode.
+  - [Odoo tools](https://www.droggol.com/odoo-tools)
 
 ### \* For odoo error:
 
