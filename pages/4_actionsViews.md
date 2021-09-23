@@ -40,6 +40,8 @@
 
   ![menus2](../images/menus2.png)
 
+### Creating Window action
+
 - Add below code to create an action. This action will trigger when `Patients` menu is clicked. We have to set the action id `patient_action` in the menuitem. And `res_model` name should be the same as the model name.
 
   ```xml
@@ -64,7 +66,7 @@
 
   ![menus4](../images/menus4.png)
 
-  Restart the server and upgrade the module and it will show the module in the App menu.
+  Restart the server and upgrade the module and it will show the module in the App menu. If we don't add the access rights that have done in [previous page](3_security.md) it will not show any menu and as well as our module.
 
   ![menus5](../images/menus5.png)
 
@@ -199,5 +201,7 @@
   ![views6](../images/views6.png)
   ![views7](../images/views7.png)
   ![views8](../images/views8.png)
+
+- Go through all the views from [here](https://github.com/KamrulSh/km_hospital/blob/main/views) if you face any problems.
 
 ## 🚀 Happy Coding ! 🔥
