@@ -191,4 +191,13 @@
 
 - [Lookup all the code for `patient_view.xml`](https://github.com/KamrulSh/km_hospital/blob/main/views/patient_view.xml)
 
+### Task:
+
+- Create `Doctor`, `Department`, `Appointments` and `MedicalTest` model, add tree, form and kanban views, create menuitem for each model and perform actions when the menu is clicked based on the picture below.
+
+  ![views5](../images/views5.png)
+  ![views6](../images/views6.png)
+  ![views7](../images/views7.png)
+  ![views8](../images/views8.png)
+
 ## 🚀 Happy Coding ! 🔥
