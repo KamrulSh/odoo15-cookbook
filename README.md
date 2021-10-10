@@ -33,13 +33,14 @@
 
 ## Table of Contents
 
-| Index |                               Contents                                |
-| :---: | :-------------------------------------------------------------------: |
-|   1   |    [Installation and environment setup](./pages/1_installation.md)    |
-|   2   |     [Creating Models And Basic Fields](./pages/2_modelsFields.md)     |
-|   3   |      [Access Rights for created Models ](./pages/3_security.md)       |
-|   4   |    [Creating menus, actions and views](./pages/4_actionsViews.md)     |
-|   5   | [Adding Send Message, Log and Activity Buttons](./pages/5_chatter.md) |
+| Index |                                Contents                                |
+| :---: | :--------------------------------------------------------------------: |
+|   1   |    [Installation and environment setup](./pages/1_installation.md)     |
+|   2   |     [Creating Models And Basic Fields](./pages/2_modelsFields.md)      |
+|   3   |       [Access Rights for created Models ](./pages/3_security.md)       |
+|   4   |     [Creating menus, actions and views](./pages/4_actionsViews.md)     |
+|   5   | [Adding Send Message, Log and Activity Buttons](./pages/5_chatter.md)  |
+|   5   | [Adding and controlling Status and Status Bar](./pages/6_statusBar.md) |
 
 <!-- CONTRIBUTING -->
 
