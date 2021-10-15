@@ -35,4 +35,16 @@
 - Task
   - Try to add chatter in `doctor` and `appointment` model.
 
+## Track field value changes and log in chatter
+
+- For tracking field value changes we have to add an attribute named `tracking=True` in that field in `.py` file. Example:
+
+  ```py
+  name = fields.Char(string='Patient Name', required=True, tracking=True)
+  ```
+
+  And it will save a log in the chatter and also who have changed the value. Try to add tracking in other fields in `doctor.py`, `patient.py` and `appointment.py` file.
+
+  ![chatter3](../images/chatter3.png)
+
 ## 🚀 Happy Coding ! 🔥
