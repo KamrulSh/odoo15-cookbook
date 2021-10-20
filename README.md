@@ -40,7 +40,10 @@
 |   3   |       [Access Rights for created Models ](./pages/3_security.md)       |
 |   4   |     [Creating menus, actions and views](./pages/4_actionsViews.md)     |
 |   5   | [Adding Send Message, Log and Activity Buttons](./pages/5_chatter.md)  |
-|   5   | [Adding and controlling Status and Status Bar](./pages/6_statusBar.md) |
+|   6   | [Adding and controlling Status and Status Bar](./pages/6_statusBar.md) |
+|   7   |       [Adding relations between models](./pages/7_relations.md)        |
+|   8   |         [Overriding Create Method](./pages/8_createMethod.md)          |
+|   9   |     [Adding groups and filters in menu](./pages/9_groupFilter.md)      |
 
 <!-- CONTRIBUTING -->
 
