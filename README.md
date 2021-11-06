@@ -44,6 +44,7 @@
 |   7   |       [Adding relations between models](./pages/7_relations.md)        |
 |   8   |         [Overriding Create Method](./pages/8_createMethod.md)          |
 |   9   |     [Adding groups and filters in menu](./pages/9_groupFilter.md)      |
+|  10   | [Inherit And Add New Fields To Existing Views](./pages/10_inherit.md)  |
 
 <!-- CONTRIBUTING -->
 
