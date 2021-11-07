@@ -124,4 +124,11 @@
   - [Check out the python code](https://github.com/KamrulSh/employee_custom/blob/master/models/certificate.py)
   - [Check out the xml code](https://github.com/KamrulSh/employee_custom/blob/master/views/inherit_certificate_views.xml)
 
+- If we want to replace fields or notebook we have to use `position="replace"`. We can use `before` and `after` as `position` also. For `expr` we can use `field`, `group`, `notebook`. For `field` and `group` we can use `name` and for `notebook` we have to use `page[position]` to find the position of the field. Example for group replace in xml:
+
+  ```xml
+  <xpath expr="//group[@name='hide_basic_information']" position="replace">
+  </xpath>
+  ```
+
 ## 🚀 Happy Coding ! 🔥
