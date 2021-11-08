@@ -19,18 +19,31 @@
 
   All the code will be placed inside the `odoo` tag.
 
-- Add below code to create root menu and a menu:
+- Add below code to create root menu, a menu and a sub-menu. In the root menu we can add `web_icon` as app icon and we have to create directory and file path `static > description > icon.png`.
 
   ```xml
   <!-- for root menu -->
   <menuitem id="hospital_root"
-      name="KM Hospital" />
+            name="KM Hospital"
+            web_icon="km_hospital,static/description/icon.png"/>
+
   <!-- for Patients menu -->
   <menuitem id="hospital_patient"
-      name="Patients"
-      parent="hospital_root"
-      action="patient_action" />
+            name="Patients"
+            parent="hospital_root"
+            groups="km_hospital.group_hospital_admin"
+            sequence='5'/>
+
+  <!-- for All Patients sub-menu -->
+  <menuitem id="hospital_patient_all"
+            name="All Patients"
+            parent="hospital_patient"
+            action="all_patient_action"
+            sequence='6'/>
   ```
+
+  - Try to add two more sub-menu for `Male Patients` and `Female patients`.
+  - [Check out the code for menus](https://github.com/KamrulSh/km_hospital/blob/e176c9741b0181b93bdf626216c0fdcdc11ea09a/views/patient_view.xml#L177-L203)
 
   Check the menuitem if it has been created or not. Go to `Settings > Technical > Menu items`
 
@@ -45,8 +58,8 @@
 - Add below code to create an action. This action will trigger when `Patients` menu is clicked. We have to set the action id `patient_action` in the menuitem. And `res_model` name should be the same as the model name.
 
   ```xml
-  <record id="patient_action" model="ir.actions.act_window">
-      <field name="name">Patients</field>
+  <record id="all_patient_action" model="ir.actions.act_window">
+      <field name="name">All Patients</field>
       <field name="type">ir.actions.act_window</field>
       <field name="res_model">kmhospital.patient</field>
       <field name="view_mode">tree,form,search,kanban</field>
@@ -58,9 +71,13 @@
   </record>
   ```
 
+  - Try to add two more window actions for `Male Patients` and `Female patients`.
+  - [Check out the code for actions](https://github.com/KamrulSh/km_hospital/blob/e176c9741b0181b93bdf626216c0fdcdc11ea09a/views/patient_view.xml#L107-L145)
+
   When we click the menuitem showed in the previous picture it will show the `Action` that we have created already.
 
-  ![menus3](../images/menus3.png)
+  ![menus3.1](../images/menus3.1.png)
+  ![menus3.2](../images/menus3.2.png)
 
   And it will show all the information related to that action.
 
@@ -69,6 +86,10 @@
   Restart the server and upgrade the module and it will show the module in the App menu. If we don't add the access rights that have done in [previous page](3_security.md) it will not show any menu and as well as our module.
 
   ![menus5](../images/menus5.png)
+
+- After creating the menu it will look something like below.
+
+  ![menus6](../images/menus6.png)
 
 ## Creating tree views
 
@@ -94,6 +115,8 @@
   It will show the list of records that have in the database. You can also create new patient information by using `Create` button and it will redirect to the form views.
 
   ![views1](../images/views1.png)
+
+  - [Check out the code for tree view](https://github.com/KamrulSh/km_hospital/blob/e176c9741b0181b93bdf626216c0fdcdc11ea09a/views/patient_view.xml#L4-L18)
 
 ## Creating form views
 
@@ -132,6 +155,8 @@
 
   ![views2](../images/views2.png)
 
+  - [Check out the code for form view](https://github.com/KamrulSh/km_hospital/blob/e176c9741b0181b93bdf626216c0fdcdc11ea09a/views/patient_view.xml#L20-L54)
+
 ## Creating search views
 
 - Add below code to create search view. It will lookup for patient information based on search criteria.
@@ -152,6 +177,8 @@
   ```
 
   ![views3](../images/views3.png)
+
+  - [Check out the code for search view](https://github.com/KamrulSh/km_hospital/blob/e176c9741b0181b93bdf626216c0fdcdc11ea09a/views/patient_view.xml#L56-L67)
 
 ## Creating kanban views
 
@@ -191,7 +218,7 @@
 
   ![views4](../images/views4.png)
 
-- [Lookup all the code for `patient_view.xml`](https://github.com/KamrulSh/km_hospital/blob/main/views/patient_view.xml)
+  - [Check out the code for kanban view](https://github.com/KamrulSh/km_hospital/blob/e176c9741b0181b93bdf626216c0fdcdc11ea09a/views/patient_view.xml#L69-L105)
 
 ### Task:
 
