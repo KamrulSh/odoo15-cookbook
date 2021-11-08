@@ -1,4 +1,4 @@
-### Set Default Group By For Menu Action
+### Set Default GroupBy For Menu Action
 
 - To show the data by group we have to add group rules in search view. Here we have added a group rules by status.
 
@@ -49,5 +49,38 @@
   ![groupFilter3](../images/groupFilter3.png)
 
   - [Check out the code for kids domain](https://github.com/KamrulSh/km_hospital/commit/b17e37367e679328cded7f15257f9eee753e8b5d)
+
+### Default Field Value using Context Based On Menu
+
+- For showing the specific field values based on clicking the menu, we have to set `domain` field in the window action like below. Here we have to use `fieldName`, `condition` and `fieldValue` inside the `()`.
+
+  ```xml
+  # for single domain values
+  <field name="domain">[('gender','=', 'female')]</field>
+
+  # for multiple domain values
+  1. OR operation
+  <field name="domain">['|', ('gender','=', 'female'), ('age', '&lt;=', 10)]</field>
+  2. AND operation
+  <field name="domain">[('gender','=', 'female'), ('age', '&gt;=', 10)]</field>
+  ```
+
+  ![menus8](../images/menus8.png)
+
+- To set the default value for a field we have set the `context` field in the window action like below. Here we have to use `default_fieldName : fieldValue` inside `{}`. Here we will set the default value of `gender` to `male` if we create male patients and `female` otherwise.
+
+  ```xml
+  # for male
+  <field name="context">{'default_gender' : 'male'}</field>
+
+  # for female
+  <field name="context">{'default_gender' : 'female'}</field>
+  ```
+
+  ![menus7](../images/menus7.png)
+  ![menus9](../images/menus9.png)
+
+  - [Check out the code for male patients](https://github.com/KamrulSh/km_hospital/blob/e176c9741b0181b93bdf626216c0fdcdc11ea09a/views/patient_view.xml#L124-L125)
+  - [Check out the code for female patients](https://github.com/KamrulSh/km_hospital/blob/e176c9741b0181b93bdf626216c0fdcdc11ea09a/views/patient_view.xml#L138-L139)
 
 ## 🚀 Happy Coding ! 🔥
