@@ -83,4 +83,22 @@
   - [Check out the code for male patients](https://github.com/KamrulSh/km_hospital/blob/e176c9741b0181b93bdf626216c0fdcdc11ea09a/views/patient_view.xml#L124-L125)
   - [Check out the code for female patients](https://github.com/KamrulSh/km_hospital/blob/e176c9741b0181b93bdf626216c0fdcdc11ea09a/views/patient_view.xml#L138-L139)
 
+### Hide Fields Based On Context value
+
+- To hide the gender field after clicking the `Patients` sub-menu `Male Patients` or `Female patients` we have to use a context in the action window. And we have to add another attribute named `invisible` in the specific field of the form view.
+
+  ```xml
+  # window action
+  <field name="context">{'default_gender' : 'female', 'hide_gender' : 1}</field>
+  ```
+
+  ```xml
+  # form view
+  <field name="gender" invisible="context.get('hide_gender')"/>
+  ```
+
+  ![menus10](../images/menus10.png)
+
+  - [Check out the code](https://github.com/KamrulSh/km_hospital/commit/bf61e8026eec3bdc740a98ee701c223385ee42c2)
+
 ## 🚀 Happy Coding ! 🔥
