@@ -45,4 +45,14 @@
   - [`appointment_view.xml`](https://github.com/KamrulSh/km_hospital/blob/63cd09522150edf777c33c5847cfb863472bc296/views/appointment_view.xml#L27-L35)
   - [`appointment.py`](https://github.com/KamrulSh/km_hospital/blob/63cd09522150edf777c33c5847cfb863472bc296/models/appointment.py#L40-L51)
 
+- To show the confirmation message after button press we have to add below code inside the `button`.
+
+  ```py
+  confirm="Are you sure you want to confirm?"
+  ```
+
+  - [Check out the code](https://github.com/KamrulSh/km_hospital/blob/8296221acb1921b5b255c06ccc42407cde12405a/views/appointment_view.xml#L31)
+
+  ![statusbar3](../images/statusbar3.png)
+
 ## 🚀 Happy Coding ! 🔥
