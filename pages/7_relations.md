@@ -2,7 +2,7 @@
 
 A record from a model may be related to a record from another model. Relational fields link records, either of the same model (hierarchies) or between different models. Here 3 types of Relations are introduced below.
 
-### Many2one
+### 1. Many2one
 
 - In our `appointment.py` file, an appointment have a connection to a patient. The value of this field is a record of a model that is associated with `kmhospital.patient`. For this we have to add `Many2one` fields to the models and add them in the views.
 - Remember: By convention, `Many2one` fields have the `_id` suffix.
@@ -23,7 +23,23 @@ A record from a model may be related to a record from another model. Relational 
 
   ![relations1](../images/relations1.png)
 
-### Many2many
+### \* Related fields
+
+- After selecting the patient name, the patient age, gender, phone and email will automatically be updated for the patient by using the `related` field.
+
+  ```py
+  phone = fields.Char(string='Phone', related='patient_id.phone')
+  email = fields.Char(string='Email', related='patient_id.email')
+  age = fields.Integer(string='Age', related='patient_id.age')
+  ```
+
+  Here `patient_id` is the `Many2one` field and it will come from `kmhospital.patient` model.
+
+  ![relations4](../images/relations4.png)
+
+  - [Check out the code](https://github.com/KamrulSh/km_hospital/blob/fbdf54471427ae5531203ebea86aa3d3990f2017/models/appointment.py#L18-L20)
+
+### 2. Many2many
 
 It is bidirectional multiple relationship field, any record on one side can be related to any number of records on the other side.
 
@@ -53,7 +69,7 @@ It is bidirectional multiple relationship field, any record on one side can be r
 
   ![relations2](../images/relations2.png)
 
-### One2many
+### 3. One2many
 
 - In `appointment.py` file, `One2many` is used to store multiple records of medicine. By convention, One2many fields have the `_ids` suffix.
 
