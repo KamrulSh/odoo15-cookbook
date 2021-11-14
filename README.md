@@ -45,6 +45,7 @@
 |   8   |         [Overriding Create Method](./pages/8_createMethod.md)          |
 |   9   |     [Adding groups and filters in menu](./pages/9_groupFilter.md)      |
 |  10   | [Inherit And Add New Fields To Existing Views](./pages/10_inherit.md)  |
+|  11   |    [On change and computed fields](./pages/11_onChangeComputed.md)     |
 
 <!-- CONTRIBUTING -->
 
