@@ -36,6 +36,8 @@
               [('appointed_doctor_id', '=', record.id)])
   ```
 
+- We have use a for loop in the computed field as `self` contains multiple values otherwise it will arise `Singleton Error`.
+
 - In the view file we have to add the field of `total_appointments` inside the `Patient List` tab.
 
   ```xml
