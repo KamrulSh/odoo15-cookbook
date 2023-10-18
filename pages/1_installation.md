@@ -38,6 +38,12 @@
   sudo python3 -m pip install libsass
   ```
 
+  ```sh
+  # for odoo 11
+  sudo npm uninstall -g less
+  sudo npm install -g less@3.10.3
+  ```
+
 ### Install PostgreSQL
 
 - Add PostgreSQL GPG key & repository:
